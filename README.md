@@ -1,4 +1,4 @@
-# Maximum Full Bags
+# Maximum Full Bags (Java)
 
 Given bag capacities, current rock counts, and `additionalRocks`, maximize
 how many bags can be filled to capacity.
@@ -15,7 +15,7 @@ rocks[0] rocks[1] ... rocks[N-1]
 additionalRocks
 ```
 
-Values may also be provided one-per-line; whitespace is flexible.
+Whitespace is flexible (values may also appear one-per-line).
 
 ## Output
 
@@ -32,9 +32,12 @@ A single integer: the maximum number of full bags.
 
 Output: `1`
 
-## Run
+## Build & run
 
 ```bash
-python3 solution.py < input.txt
-python3 -m unittest tests.test_solution -v
+javac Solution.java
+java Solution < examples/example1.txt
+
+javac Solution.java SolutionTest.java
+java SolutionTest
 ```
